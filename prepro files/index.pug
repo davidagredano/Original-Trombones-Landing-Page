@@ -1,0 +1,141 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="icon", href="https://cdn-icons-png.flaticon.com/512/4268/4268766.png", type="image/png", sizes="32x32")
+    link(rel="stylesheet", href="https://fonts.google.com/specimen/Public+Sans")
+    link(rel="stylesheet", href="./styles/main.css")
+    title Original Trombones
+    meta(name="description", content="Original Trombones")
+    
+  //BODY
+  body.l-body
+
+    //HEADER
+    header.l-header 
+      .header__wrapper   
+        img(src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png", alt="original-trombones-logo").logo#header-img
+        nav.nav
+          ul.nav__list
+            li.nav__item 
+              a.nav__link(href="#features") Features
+            li.nav__item 
+              a.nav__link(href="#how-it-works") How It Works
+            li.nav__item 
+              a.nav__link(href="#pricing") Pricing
+    
+    //MAIN
+    main.l-main 
+      .overlay
+
+      //HERO
+      section.section
+        .section__wrapper
+          h1.section__heading.section__heading--hero Handcrafted, home-made masterpieces
+          //-- INSERT FORM
+
+      //FEATURES
+      section.section.section--darker-bg
+        .section__wrapper
+          h2.section__heading Why choose Original Trombones?
+          p.section__copy Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aspernatur facilis corrupti necessitatibus, quod commodi consequatur illum, nostrum, harum quia doloremque assumenda accusamus nam vero ipsam aliquid optio dolorum architecto.
+        .section__wrapper.section__wrapper--cards
+          article.card 
+            .card__wrapper
+              img.card__icon(src="", alt="icon-premium-materials")
+            .card__wrapper
+              h3.card__heading Premium Materials
+              p.card__copy Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
+          article.card 
+            .card__wrapper
+              img.card__icon(src="", alt="icon-fast-shipping")
+            .card__wrapper
+              h3.card__heading Fast Shipping
+              p.card__copy We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.
+          article.card 
+            .card__wrapper
+              img.card__icon(src="", alt="icon-fast-onboarding")
+            .card__wrapper
+              h3.card__heading Quality Assurance
+              p.card__copy For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
+
+      //VIDEO
+      section.section
+        .section__wrapper
+          //--REVISE
+          video(src="")
+
+      //PRICING
+      section.section.section--darker-bg
+        .section__wrapper
+          h2.section__heading Pricing
+        .section__wrapper.section__wrapper--pricing-cards 
+          article.pricing-card
+            .pricing-card__header 
+              h3.pricing-card__title TENOR TROMBONE
+            .pricing-card__body
+              h4.pricing-card__price $600
+              ul.pricing-card__list
+                li.pricing-card__item Lorem ipsum.
+                li.pricing-card__item Lorem ipsum.
+                li.pricing-card__item Lorem ipsum dolor.
+                li.pricing-card__item Lorem ipsum.
+              button.pricing-card__button SELECT
+          article.pricing-card
+            .pricing-card__header 
+              h3.pricing-card__title BASS TROMBONE
+            .pricing-card__body
+              h4.pricing-card__price $900
+              ul.pricing-card__list
+                li.pricing-card__item Lorem ipsum.
+                li.pricing-card__item Lorem ipsum.
+                li.pricing-card__item Lorem ipsum dolor.
+                li.pricing-card__item Lorem ipsum.
+              button.pricing-card__button SELECT
+          article.pricing-card
+            .pricing-card__header 
+              h3.pricing-card__title VALVE TROMBONE
+            .pricing-card__body
+              h4.pricing-card__price $1200
+              ul.pricing-card__list
+                li.pricing-card__item Plays similar to a Trumpet.
+                li.pricing-card__item Great for Jazz Bands.
+                li.pricing-card__item Lorem ipsum dolor.
+                li.pricing-card__item Lorem ipsum.
+              button.pricing-card__button SELECT
+
+          
+
+    //FOOTER
+    footer.l-footer
+      .footer__wrapper
+        .footer__wrapper
+          ul.social-icons__list  
+            li.social-icons__item 
+              a.social-icons__link(href="") 
+                img.social-icons__icon(src="./images/icon-facebook.svg", alt="icon-facebook")
+            li.social-icons__item 
+              a.social-icons__link(href="") 
+                img.social-icons__icon(src="./images/icon-youtube.svg", alt="icon-youtube")
+            li.social-icons__item 
+              a.social-icons__link(href="") 
+                img.social-icons__icon(src="./images/icon-twitter.svg", alt="icon-twitter")
+            li.social-icons__item 
+              a.social-icons__link(href="") 
+                img.social-icons__icon(src="./images/icon-pinterest.svg", alt="icon-pinterest")
+            li.social-icons__item 
+              a.social-icons__link(href="") 
+                img.social-icons__icon(src="./images/icon-instagram.svg", alt="icon-instagram")
+        .footer__wrapper
+          ul.footer-links__list 
+            li.footer-links__item 
+              a.footer-links__link(href="") Privacy
+            li.footer-links__item 
+              a.footer-links__link(href="") Terms
+            li.footer-links__item 
+              a.footer-links__link(href="") Contact
+        .footer__wrapper 
+          p.copyright © Original Trombones. All Rights Reserved
+    
