@@ -6,25 +6,26 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="icon", href="https://cdn-icons-png.flaticon.com/512/4268/4268766.png", type="image/png", sizes="32x32")
     link(rel="stylesheet", href="https://fonts.google.com/specimen/Public+Sans")
-    link(rel="stylesheet", href="./styles/main.css")
+    link(rel="stylesheet", href="styles.css")
     title Original Trombones
     meta(name="description", content="Original Trombones")
+    script(src="https://kit.fontawesome.com/5f668f5af8.js" crossorigin="anonymous")
     
   //BODY
   body.l-body
 
     //HEADER
-    header.l-header 
+    header.l-header#header
       .header__wrapper   
         img(src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png", alt="original-trombones-logo").logo#header-img
-        nav.nav
+        nav.nav#nav-bar
           ul.nav__list
             li.nav__item 
-              a.nav__link(href="#features") Features
+              a.nav__link.nav-link(href="#features") Features
             li.nav__item 
-              a.nav__link(href="#how-it-works") How It Works
+              a.nav__link.nav-link(href="#how-it-works") How It Works
             li.nav__item 
-              a.nav__link(href="#pricing") Pricing
+              a.nav__link.nav-link(href="#pricing") Pricing
     
     //MAIN
     main.l-main 
@@ -34,41 +35,42 @@ html(lang="en")
       section.section
         .section__wrapper
           h1.section__heading.section__heading--hero Handcrafted, home-made masterpieces
-          //-- INSERT FORM
+          form.form#form(action="https://www.freecodecamp.com/email-submit", method="post")
+            input.form__input--email#email(type="email", name="email", placeholder="Enter your email address")
+            input.form__input--submit#submit(type="submit", value="Get Started") 
 
       //FEATURES
-      section.section.section--darker-bg
+      section.section.section--darker-bg#features
         .section__wrapper
           h2.section__heading Why choose Original Trombones?
           p.section__copy Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aspernatur facilis corrupti necessitatibus, quod commodi consequatur illum, nostrum, harum quia doloremque assumenda accusamus nam vero ipsam aliquid optio dolorum architecto.
         .section__wrapper.section__wrapper--cards
           article.card 
             .card__wrapper
-              img.card__icon(src="", alt="icon-premium-materials")
+              i.fa-solid.fa-star.fa-2xl
             .card__wrapper
               h3.card__heading Premium Materials
               p.card__copy Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
           article.card 
             .card__wrapper
-              img.card__icon(src="", alt="icon-fast-shipping")
+              i.fa-solid.fa-truck-fast.fa-2xl
             .card__wrapper
               h3.card__heading Fast Shipping
               p.card__copy We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.
           article.card 
             .card__wrapper
-              img.card__icon(src="", alt="icon-fast-onboarding")
+              i.fa-solid.fa-shield-halved.fa-2xl
             .card__wrapper
               h3.card__heading Quality Assurance
               p.card__copy For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
 
       //VIDEO
-      section.section
+      section.section#how-it-works
         .section__wrapper
-          //--REVISE
-          video(src="")
-
+          iframe.video#video(src="https://www.youtube.com/embed/8-fkvWFSeYc?rel=0&controls=0&showinfo=0", title="What does a trombone sound like?", frameborder="0", allowfullscreen) 
+      
       //PRICING
-      section.section.section--darker-bg
+      section.section.section--darker-bg#pricing
         .section__wrapper
           h2.section__heading Pricing
         .section__wrapper.section__wrapper--pricing-cards 
@@ -106,8 +108,6 @@ html(lang="en")
                 li.pricing-card__item Lorem ipsum.
               button.pricing-card__button SELECT
 
-          
-
     //FOOTER
     footer.l-footer
       .footer__wrapper
@@ -115,19 +115,19 @@ html(lang="en")
           ul.social-icons__list  
             li.social-icons__item 
               a.social-icons__link(href="") 
-                img.social-icons__icon(src="./images/icon-facebook.svg", alt="icon-facebook")
+                i.fa-brands.fa-facebook
             li.social-icons__item 
               a.social-icons__link(href="") 
-                img.social-icons__icon(src="./images/icon-youtube.svg", alt="icon-youtube")
+                i.fa-brands.fa-youtube
             li.social-icons__item 
               a.social-icons__link(href="") 
-                img.social-icons__icon(src="./images/icon-twitter.svg", alt="icon-twitter")
+                i.fa-brands.fa-instagram
             li.social-icons__item 
               a.social-icons__link(href="") 
-                img.social-icons__icon(src="./images/icon-pinterest.svg", alt="icon-pinterest")
+                i.fa-brands.fa-twitter
             li.social-icons__item 
               a.social-icons__link(href="") 
-                img.social-icons__icon(src="./images/icon-instagram.svg", alt="icon-instagram")
+                i.fa-brands.fa-pinterest
         .footer__wrapper
           ul.footer-links__list 
             li.footer-links__item 
@@ -136,6 +136,6 @@ html(lang="en")
               a.footer-links__link(href="") Terms
             li.footer-links__item 
               a.footer-links__link(href="") Contact
-        .footer__wrapper 
           p.copyright © Original Trombones. All Rights Reserved
+
     

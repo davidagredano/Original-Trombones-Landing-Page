@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4268/4268766.png" type="image/png" sizes="32x32">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Public+Sans">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Original Trombones</title>
     <meta name="description" content="Original Trombones">
+    <script src="https://kit.fontawesome.com/5f668f5af8.js" crossorigin="anonymous"></script>
   </head>
   <!--BODY-->
   <body class="l-body">
     <!--HEADER-->
-    <header class="l-header"> 
+    <header class="l-header" id="header">
       <div class="header__wrapper">  <img class="logo" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="original-trombones-logo" id="header-img">
-        <nav class="nav">
+        <nav class="nav" id="nav-bar">
           <ul class="nav__list">
-            <li class="nav__item"> <a class="nav__link" href="#features">Features</a></li>
-            <li class="nav__item"> <a class="nav__link" href="#how-it-works">How It Works</a></li>
-            <li class="nav__item"> <a class="nav__link" href="#pricing">Pricing</a></li>
+            <li class="nav__item"> <a class="nav__link nav-link" href="#features">Features</a></li>
+            <li class="nav__item"> <a class="nav__link nav-link" href="#how-it-works">How It Works</a></li>
+            <li class="nav__item"> <a class="nav__link nav-link" href="#pricing">Pricing</a></li>
           </ul>
         </nav>
       </div>
@@ -31,31 +32,35 @@
       <section class="section">
         <div class="section__wrapper">
           <h1 class="section__heading section__heading--hero">Handcrafted, home-made masterpieces</h1>
+          <form class="form" id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+            <input class="form__input--email" id="email" type="email" name="email" placeholder="Enter your email address">
+            <input class="form__input--submit" id="submit" type="submit" value="Get Started">
+          </form>
         </div>
       </section>
       <!--FEATURES-->
-      <section class="section section--darker-bg">
+      <section class="section section--darker-bg" id="features">
         <div class="section__wrapper">
           <h2 class="section__heading">Why choose Original Trombones?</h2>
           <p class="section__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aspernatur facilis corrupti necessitatibus, quod commodi consequatur illum, nostrum, harum quia doloremque assumenda accusamus nam vero ipsam aliquid optio dolorum architecto.</p>
         </div>
         <div class="section__wrapper section__wrapper--cards">
           <article class="card"> 
-            <div class="card__wrapper"><img class="card__icon" src="" alt="icon-premium-materials"></div>
+            <div class="card__wrapper"><i class="fa-solid fa-star fa-2xl"></i></div>
             <div class="card__wrapper">
               <h3 class="card__heading">Premium Materials</h3>
               <p class="card__copy">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
             </div>
           </article>
           <article class="card"> 
-            <div class="card__wrapper"><img class="card__icon" src="" alt="icon-fast-shipping"></div>
+            <div class="card__wrapper"><i class="fa-solid fa-truck-fast fa-2xl"></i></div>
             <div class="card__wrapper">
               <h3 class="card__heading">Fast Shipping</h3>
               <p class="card__copy">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
             </div>
           </article>
           <article class="card"> 
-            <div class="card__wrapper"><img class="card__icon" src="" alt="icon-fast-onboarding"></div>
+            <div class="card__wrapper"><i class="fa-solid fa-shield-halved fa-2xl"></i></div>
             <div class="card__wrapper">
               <h3 class="card__heading">Quality Assurance</h3>
               <p class="card__copy">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
@@ -64,13 +69,13 @@
         </div>
       </section>
       <!--VIDEO-->
-      <section class="section">
+      <section class="section" id="how-it-works">
         <div class="section__wrapper">
-          <video src=""></video>
+          <iframe class="video" id="video" src="https://www.youtube.com/embed/8-fkvWFSeYc?rel=0&amp;controls=0&amp;showinfo=0" title="What does a trombone sound like?" frameborder="0" allowfullscreen> </iframe>
         </div>
       </section>
       <!--PRICING-->
-      <section class="section section--darker-bg">
+      <section class="section section--darker-bg" id="pricing">
         <div class="section__wrapper">
           <h2 class="section__heading">Pricing</h2>
         </div>
@@ -128,11 +133,11 @@
       <div class="footer__wrapper">
         <div class="footer__wrapper">
           <ul class="social-icons__list"> 
-            <li class="social-icons__item"> <a class="social-icons__link" href=""> <img class="social-icons__icon" src="./images/icon-facebook.svg" alt="icon-facebook"></a></li>
-            <li class="social-icons__item"> <a class="social-icons__link" href=""> <img class="social-icons__icon" src="./images/icon-youtube.svg" alt="icon-youtube"></a></li>
-            <li class="social-icons__item"> <a class="social-icons__link" href=""> <img class="social-icons__icon" src="./images/icon-twitter.svg" alt="icon-twitter"></a></li>
-            <li class="social-icons__item"> <a class="social-icons__link" href=""> <img class="social-icons__icon" src="./images/icon-pinterest.svg" alt="icon-pinterest"></a></li>
-            <li class="social-icons__item"> <a class="social-icons__link" href=""> <img class="social-icons__icon" src="./images/icon-instagram.svg" alt="icon-instagram"></a></li>
+            <li class="social-icons__item"> <a class="social-icons__link" href=""> <i class="fa-brands fa-facebook"></i></a></li>
+            <li class="social-icons__item"> <a class="social-icons__link" href=""> <i class="fa-brands fa-youtube"></i></a></li>
+            <li class="social-icons__item"> <a class="social-icons__link" href=""> <i class="fa-brands fa-instagram"></i></a></li>
+            <li class="social-icons__item"> <a class="social-icons__link" href=""> <i class="fa-brands fa-twitter"></i></a></li>
+            <li class="social-icons__item"> <a class="social-icons__link" href=""> <i class="fa-brands fa-pinterest"></i></a></li>
           </ul>
         </div>
         <div class="footer__wrapper">
@@ -141,8 +146,6 @@
             <li class="footer-links__item"> <a class="footer-links__link" href="">Terms</a></li>
             <li class="footer-links__item"> <a class="footer-links__link" href="">Contact</a></li>
           </ul>
-        </div>
-        <div class="footer__wrapper"> 
           <p class="copyright">© Original Trombones. All Rights Reserved</p>
         </div>
       </div>
