@@ -1,0 +1,64 @@
+// # Style Guide
+
+// ## Layout
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+
+// ### Primary
+$color-primary-Gray: #eeeeee;
+$color-primary-Dark-Gray: #222831;
+$color-primary-Green-Pale: #4f8a8b;
+$color-primary-Yellow-Pale: #fbd46d;
+
+// ### Neutral
+
+$color-neutral-Grayish-Blue: hsl(233, 8%, 62%);
+$color-neutral-Light-Grayish-Blue: hsl(220, 16%, 96%);
+$color-neutral-Very-Light-Gray: hsl(0, 0%, 98%);
+$color-neutral-White: hsl(0, 0%, 100%);
+
+// ## Typography
+
+// ### Body Copy
+$font-weight-light: 300;
+$font-weight-medium: 400;
+$font-weight-bold: 700;
+
+// ### Font
+@mixin font(
+  $size: 1rem,
+  $weight: $font-weight-medium,
+  $color: $color-primary-Dark-Gray
+) {
+  font-family: "Public Sans", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin reset {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin center {
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex(
+  $flex-direction: row,
+  $justify-content: center,
+  $align-items: center,
+  $gap: 0
+) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+}
