@@ -1,35 +1,37 @@
 // # Style Guide
 
-// ## Layout
+// LAYOUT
+$device-mobile: 320px; // - Mobile: 320px - 424px
+$device-tablet: 425px; // - Tablet: 425px - 767px
+$device-laptop: 768px; // - Laptop: 768px - 1023px
+$device-desktop: 1024px; // - Desktop: 1024px <
 
-// - Mobile: 320px - 424px
-// - Tablet: 425px - 767px
-// - Laptop: 768px - 1023px
-// - Desktop: 1024px <
+@mixin media($min-width) {
+  @media screen and (min-width: $min-width) {
+    @content;
+  }
+}
 
-// ## Colors
-
-// ### Primary
+// COLORS
+// Colors Primary
 $color-primary-Gray: #eeeeee;
 $color-primary-Dark-Gray: #222831;
 $color-primary-Green-Pale: #4f8a8b;
 $color-primary-Yellow-Pale: #fbd46d;
 
-// ### Neutral
-
+// Colors Neutral
 $color-neutral-Grayish-Blue: hsl(233, 8%, 62%);
 $color-neutral-Light-Grayish-Blue: hsl(220, 16%, 96%);
 $color-neutral-Very-Light-Gray: hsl(0, 0%, 98%);
 $color-neutral-White: hsl(0, 0%, 100%);
 
-// ## Typography
-
-// ### Body Copy
+// TYPOGRAPHY
+// Typography Size
 $font-weight-light: 300;
 $font-weight-medium: 400;
 $font-weight-bold: 700;
 
-// ### Font
+// Typography Font
 @mixin font(
   $size: 1rem,
   $weight: $font-weight-medium,
@@ -41,6 +43,7 @@ $font-weight-bold: 700;
   color: $color;
 }
 
+// ## Utilities
 @mixin reset {
   box-sizing: border-box;
   margin: 0;
